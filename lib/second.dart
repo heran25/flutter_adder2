@@ -33,7 +33,7 @@ class _nameState extends State<second> {
                       return Text(widget.numbers[index].toString(),style: TextStyle(fontSize: 20),);
                     }),
               ),
-              ElevatedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Home(numbers:widget.numbers)));}, child: Text('First'))
+              ElevatedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));}, child: Text('First'))
             ],
           ),
         ));

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_adder2/second.dart';
 class Home extends StatefulWidget {
-   Home({super.key, required this.numbers});
- final List<int> numbers ;
+   List<int> numbers = [0, 1, 2, 3, 4];//this has to be here because if we put it down elow whenever we resort from page second to this the list would only be 1,2,3,4 and wouldn't include the new numbers we added to the list because the createState() method always creates a new instance of the page.
+   Home({super.key});
+ 
   @override
   State<Home> createState() => _HomeState();
 }
